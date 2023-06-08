@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>One Piece Timeline</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin-left: 17%;
+        margin-right: 17%;
+        background-color: #4c4c4c;
+        padding: 10px;
+        color: bisque;
+        height: 100px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+      html {
+        scroll-behavior: smooth;
+        background-size: cover;
+        background-image: url("ColorSpread.jpg");
+      }
+      form {
+        align-self: "center";
+        color: black;
+        background-color: bisque;
+        padding: 15px;
+        border-radius: 25px;
+        margin-top: 5%;
+        border-style: ridge;
+        border-width: 5px;
+        border-color: #4c4c4c;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 bg-light text-center w3-red">
+          <h1>One Piece Timeline</h1>
+        </div>
+        <div class="container">
+          <div class="col-lg-2">
+            <h3 class="text-right">Wiki</h3>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="text-center">Support The Website</h3>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="text-left">Corrections & Help</h3>
+          </div>
+        </div>
+      </div>
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+              <label for="Arcs">Arc?</label>
+              <input list="Arcs" name="Arcs" />
+              <datalist id="Arcs">
+                <option value="Paradise Dawn"></option>
+                <option value="Wano"></option>
+                <option value="WholeCake"></option>
+                <option value="Impel Down"></option>
+                <option value="Zou"></option>
+              </datalist>
+            </div>
+
+            <div class="col-lg-2">
+              <label for="Episode">Episodes:</label>
+              <input
+                type="number"
+                id="Episodes"
+                name="Episodes"
+                min="1"
+                max="5"
+              />
+            </div>
+            <div class="col-lg-3">
+              <label for="Character">Character:</label>
+              <input list="Characters" name="Characters" />
+              <datalist id="Characters">
+                <option value="Luffy"></option>
+                <option value="Zoro"></option>
+                <option value="Nami"></option>
+                <option value="Sanji"></option>
+                <option value="Chopper"></option>
+                <option value="Franky"></option>
+                <option value="Robin"></option>
+                <option value="Jimbei"></option>
+                <option value="Brook"></option>
+              </datalist>
+            </div>
+            <div class="col-lg-3"><input type="submit" /></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
